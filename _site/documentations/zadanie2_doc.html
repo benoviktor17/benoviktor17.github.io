@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie2_doc</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="V. Beno" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        
+            <li class="nav-item">
+                <a class="nav-link" href="/"> Domov </a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="/about/"> O mne </a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="/projects/"> Moje Projekty </a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="/wpub/"> Webove publikovanie </a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="/documentations/"> Dokumentacie </a>
+            </li>
+        
+        </ul>
+        <div class="social-part">
+            <p>27th March 2019</p>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+    </div>
+</nav>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    $('.navbar-light .dmenu').hover(function () {
+            $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+        }, function () {
+            $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+        });
+    });
+</script>
+    <div class="container">
+
+  <div class="row" align="center">
+    <div class="col-md" id="title_page">
+
+      <div class="row" >
+        <div class="col-md" id="title">
+          <h1>Zadanie 2 Dokumentacia</h1>
+          <h2>WPUB</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md" id="zadanie_link">
+          
+          <a href="/assignments/2019-03-17-zadanie2.html">
+            <button type="button" class="btn btn-primary">Zadanie c. 2</button>
+          </a>
+        </div>
+        <div class="col-md" id="autor">
+          <h3>Viktor Beno</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md" id="main_content_dokumentacia">
+      <h1 id="zadanie">Zadanie</h1>
+
+<p>Predmetom 2. zadania je spracovanie vybraného dokumentu (ideálne bakalárskeho projektu) z pôvodného ľubovoľného (Word, OpenOffice, LaTeX, …) formátu do formátu DocBook a vygenerovanie cieľového tvaru v PDF. Výsledný dokument bude mať rozsah minimálne 10 a maximálne 15 strán. Do rozsahu sa nezapočítavajú úvodné strany (obsah, zoznamy obrázkov a tabuliek), použitá literatúra a prílohy.</p>
+
+<h1 id="použité-elementy-a-atribúty">Použité elementy a atribúty</h1>
+
+<h2 id="štandardné-členenie-textu-na-kapitola-podkapitola-podpodkapitola-príloha-generovaný-obsah">štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah</h2>
+
+<ul>
+  <li><strong>chapter</strong> - element pre označenie kapitoly</li>
+  <li><strong>section</strong> - označenie sekcie/podkapitoly, atribút <em>id</em> pre identifikáciu elementu</li>
+  <li><strong>appendix</strong> - vytvorenie dodatkov, pri dodatku použitý <strong>variablelist</strong></li>
+</ul>
+
+<h2 id="zvýraznenie-slov-zvýraznenie-členenia-textu-odrážkami-alebo-číslovaním">zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním</h2>
+
+<ul>
+  <li><strong>emphasis</strong> - zvýraznenie textu kurzívou</li>
+  <li><strong>itemizedlist</strong> - členenie odrážkami, použitý atribút <em>mark</em> s hodnotou “bullet” pre odrážky v tvare vyplnenej guličky</li>
+</ul>
+
+<h2 id="odkazy-na-iné-časti-vlastného-dokumentu-prípadne-odkazy-na-url">odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL</h2>
+
+<ul>
+  <li><strong>ulink</strong> - odkaz na url link</li>
+  <li><strong>xref</strong> - odkazovanie na iné časti dokumentu</li>
+</ul>
+
+<h2 id="poznámka-pod-čiarou">poznámka pod čiarou</h2>
+
+<ul>
+  <li><strong>footnote</strong> - vytvorenie poznámky pod čiarou na konci strany</li>
+</ul>
+
+<h2 id="zoznam-použitej-literatúry-a-zdrojov-vrátane-ich-citácie-v-texte">zoznam použitej literatúry a zdrojov vrátane ich citácie v texte</h2>
+
+<ul>
+  <li><strong>bibliography</strong> - vytvorenie zoznamu literatúri</li>
+  <li><strong>bibliomixed</strong> - element predstavuje jeden bibliografický záznam</li>
+  <li><strong>bibliomisc</strong> - vedľajšie informácie o knihe/článku</li>
+  <li><strong>xref</strong> - odkaz na bibliografický záznam</li>
+</ul>
+
+<h2 id="vloženie-obrázku-a-tabuliek-odkazy-na-ne-v-texte-zoznam-obrázkov-a-tabuliek-v-úvode-alebo-závere-textu">vloženie obrázku a tabuliek, odkazy na ne v texte; zoznam obrázkov a tabuliek v úvode alebo závere textu</h2>
+
+<ul>
+  <li><strong>figure</strong> - predstavuje objekt s nadpisom a mediálnym objektom <strong>mediaobject</strong>, ktorý obsahuje audio, image, video alebo text objekt</li>
+  <li><strong>table</strong> - vytvorenie tabuľky, podobne ako v html</li>
+  <li>
+    <p><strong>xref</strong> - odkazovanie na obrázky a tabuľky, použitý atribút <em>xrefstyle</em> s hodnotou “style: label” pre odkaz iba cez označenie</p>
+  </li>
+  <li>úprava thesis.xsl pre generovanie zoznamu obrázkov a tabuliek</li>
+</ul>
+
+<h2 id="vytvorenie-registra-pojmov-indexu-s-pojmami-hierarchicky-usporiadanými-do-dvoch-úrovni-napríklad-cykly-while-cykly-for">vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni, napríklad „cykly, while“, „cykly, for“</h2>
+
+<ul>
+  <li><strong>index</strong> - vytvori samotny index</li>
+  <li><strong>indexterm</strong> - záznam do indexu, použité <strong>primary</strong> a <strong>secondary</strong> pre hierarchické rozdelenie s atribútom <em>sortas</em> pre zoskupenie</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
